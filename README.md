@@ -1,12 +1,12 @@
 # d2l-package-reader
 
-Library for reading JavaScript contents of D2L web packages.
+Utilities for reading contents of D2L web package files.
 
 ## Installation
 
 Install from NPM:
 ```shell
-npm install d2l-package-reader
+npm install d2l-web-package-reader
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm install d2l-package-reader
 To load all JavaScript files from a package by name:
 
 ```javascript
-var packageReader = require('d2l-package-reader');
+var packageReader = require('d2l-web-package-reader');
 
 packageReader.loadByName( __dirname, 'My.Package.Name' )
   then( function( files ) {

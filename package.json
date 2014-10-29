@@ -1,7 +1,7 @@
 {
-  "name": "d2l-package-reader",
+  "name": "d2l-web-package-reader",
   "version": "0.0.0",
-  "description": "For reading D2L web packages.",
+  "description": "Utilities for reading contents of D2L web package files",
   "main": "index.js",
   "scripts": {
     "test": "gulp test"
