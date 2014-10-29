@@ -1,0 +1,31 @@
+{
+  "name": "d2l-package-reader",
+  "version": "0.0.0",
+  "description": "For reading D2L web packages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dlockhart/d2l-package-reader.git"
+  },
+  "keywords": [
+    "d2l"
+  ],
+  "author": "D2L Corporation",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/dlockhart/d2l-package-reader/issues"
+  },
+  "homepage": "https://github.com/dlockhart/d2l-package-reader",
+  "dependencies": {
+    "q": "^1.0.1",
+    "q-io": "^1.11.5",
+    "xml2js": "^0.4.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.9",
+    "gulp-jshint": "^1.8.6"
+  }
+}
