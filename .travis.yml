@@ -1,3 +1,12 @@
 language: node_js
 node_js:
 - '0.10'
+deploy:
+  provider: npm
+  email: d2ltravisdeploy@d2l.com
+  api_key:
+    secure: LbBP/0oghsd5DwxGl2GKcLg8CqQ1y7HLcp/GGRrfiO0qLPCfqB484uSBVfPFc/rklslTPgXtRgTmD+lQlsu3kfe2AIfRWI/BEc6rRsk2GGGh0o5dPZseNPfN4bKS4MYup0onxXjdBcYsoJ0NypMwW0clrl1vPvX3Pz6EruFXcog=
+  on:
+    tags: true
+    repo: Desire2Learn-Valence/web-package-reader
+    all_branches: true
