@@ -1,4 +1,4 @@
-# d2l-package-reader
+# d2l-web-package-reader
 
 Utilities for reading contents of D2L web package files.
 
