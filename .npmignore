@@ -1,0 +1,5 @@
+node_modules/
+.editorconfig
+.jshintrc
+.travis.yml
+gulpfile.js
