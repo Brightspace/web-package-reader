@@ -1,5 +1,7 @@
 node_modules/
+test/
 .editorconfig
 .jshintrc
+.npmignore
 .travis.yml
 gulpfile.js
