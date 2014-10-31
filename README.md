@@ -1,6 +1,7 @@
 # d2l-web-package-reader
 [![NPM version][npm-image]][npm-url]
 [![Build status][ci-image]][ci-url]
+[![Coverage Status][coverage-image]][coverage-url]
 
 Utilities for reading contents of D2L web package files.
 
@@ -37,3 +38,5 @@ then( function( files ) {
 [npm-image]: https://badge.fury.io/js/web-package-reader.png
 [ci-image]: https://travis-ci.org/Desire2Learn-Valence/web-package-reader.svg?branch=master
 [ci-url]: https://travis-ci.org/Desire2Learn-Valence/web-package-reader
+[coverage-image]: https://coveralls.io/repos/Desire2Learn-Valence/web-package-reader/badge.png?branch=master
+[coverage-url]: https://coveralls.io/r/Desire2Learn-Valence/web-package-reader?branch=master
