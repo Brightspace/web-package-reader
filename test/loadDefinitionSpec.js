@@ -20,8 +20,12 @@ describe( 'Load Definition', function() {
 	it( 'Should leave absolute paths alone', function( done ) {
 		loadDefinition( path.join( dataPath, 'packages', 'definition2.definition.xml' ) )
 			.then( function( files ) {
-				expect( files.length ).toBe( 1 );
-				expect( files[0] ).toBe( 'c:\\test1.package.xml' );
+				expect( files.length ).toBe( 2 );
+				if( path.sep === '/' ) {
+					expect( files[1] ).toBe( '/abc/test1.package.xml' );
+				} else {
+					expect( files[0] ).toBe( 'c:\\abc\\test1.package.xml' );
+				}
 				done();
 			} );
 	} );

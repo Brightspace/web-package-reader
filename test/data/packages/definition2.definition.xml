@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package Name="TestPackage2" HasCss="false" HasJavaScript="true">
 	<Paths>
-		<File Path="c:\test1.package.xml" />
+		<File Path="c:\abc\test1.package.xml" />
+		<File Path="/abc/test1.package.xml" />
 	</Paths>
 </Package>
