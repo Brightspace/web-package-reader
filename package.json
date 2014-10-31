@@ -1,6 +1,6 @@
 {
   "name": "d2l-web-package-reader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Utilities for reading contents of D2L web package files",
   "main": "lib/index.js",
   "scripts": {
