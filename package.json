@@ -1,6 +1,6 @@
 {
   "name": "d2l-web-package-reader",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Utilities for reading contents of D2L web package files",
   "main": "lib/index.js",
   "scripts": {
@@ -26,6 +26,9 @@
   },
   "devDependencies": {
     "gulp": "^3.8.9",
+    "gulp-coveralls": "^0.1.3",
+    "gulp-istanbul": "^0.3.1",
+    "gulp-jasmine": "^1.0.1",
     "gulp-jshint": "^1.8.6",
     "instance-root-finder": "0.0.1"
   }

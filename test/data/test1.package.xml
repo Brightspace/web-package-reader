@@ -1,0 +1,6 @@
+<Package Name="TestPackage1" xmlns="http://schemas.desire2learn.com/xml/schemas/package.xsd">
+	<JavaScript>
+		<File Path="file1.js" />
+		<File Path="file2.js" />
+	</JavaScript>
+</Package>

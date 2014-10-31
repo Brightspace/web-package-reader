@@ -1,0 +1,8 @@
+{
+    "node": true,
+    "globals"   : {
+      "describe": false,
+      "expect": false,
+      "it": false
+    }
+}

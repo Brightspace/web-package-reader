@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package Name="TestPackage1" HasCss="false" HasJavaScript="true">
+	<Paths>
+		<File Path="../test1.package.xml" />
+		<File Path="../test2.package.xml" />
+	</Paths>
+</Package>
