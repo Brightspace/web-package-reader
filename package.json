@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "gulp": "^3.8.9",
-    "gulp-jshint": "^1.8.6"
+    "gulp-jshint": "^1.8.6",
+    "instance-root-finder": "0.0.1"
   }
 }
