@@ -1,6 +1,6 @@
 {
   "name": "d2l-web-package-reader",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Utilities for reading contents of D2L web package files",
   "main": "lib/index.js",
   "scripts": {
@@ -22,8 +22,7 @@
   "dependencies": {
     "q": "^1.0.1",
     "q-io": "^1.11.5",
-    "xml2js": "^0.4.4",
-    "instance-root-finder": "0.0.1"
+    "xml2js": "^0.4.4"
   },
   "devDependencies": {
     "gulp": "^3.8.9",
