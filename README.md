@@ -1,6 +1,6 @@
 # d2l-web-package-reader
 
-Utilities for reading contents of D2L web package files for fun.
+Utilities for reading contents of D2L web package files not for fun.
 
 ## Installation
 
