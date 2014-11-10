@@ -36,7 +36,7 @@ then( function( files ) {
 
 [npm-url]: https://npmjs.org/package/d2l-web-package-reader
 [npm-image]: https://badge.fury.io/js/d2l-web-package-reader.png
-[ci-image]: https://travis-ci.org/Desire2Learn-Valence/web-package-reader.svg?branch=master
-[ci-url]: https://travis-ci.org/Desire2Learn-Valence/web-package-reader
-[coverage-image]: https://coveralls.io/repos/Desire2Learn-Valence/web-package-reader/badge.png?branch=master
-[coverage-url]: https://coveralls.io/r/Desire2Learn-Valence/web-package-reader?branch=master
+[ci-image]: https://travis-ci.org/Brightspace/web-package-reader.svg?branch=master
+[ci-url]: https://travis-ci.org/Brightspace/web-package-reader
+[coverage-image]: https://coveralls.io/repos/Brightspace/web-package-reader/badge.png?branch=master
+[coverage-url]: https://coveralls.io/r/Brightspace/web-package-reader?branch=master
