@@ -1,6 +1,6 @@
 {
   "name": "d2l-web-package-reader",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Utilities for reading contents of D2L web package files",
   "main": "lib/index.js",
   "scripts": {
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Desire2Learn-Valence/web-package-reader.git"
+    "url": "https://github.com/Brightspace/web-package-reader.git"
   },
   "keywords": [
     "d2l"
   ],
   "author": "D2L Corporation",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Desire2Learn-Valence/web-package-reader/issues"
+    "url": "https://github.com/Brightspace/web-package-reader/issues"
   },
-  "homepage": "https://github.com/Desire2Learn-Valence/web-package-reader",
+  "homepage": "https://github.com/Brightspace/web-package-reader",
   "dependencies": {
     "q": "^1.0.1",
     "q-io": "^1.11.5",
