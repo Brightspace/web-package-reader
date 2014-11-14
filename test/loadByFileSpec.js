@@ -5,7 +5,7 @@ var webPackageReader = require('../'),
 
 var dataPath = path.join( __dirname, 'data' );
 
-describe( 'Load By File', function() {
+describe( 'Load By File (Asynchronous)', function() {
 
 	it( 'Should load 2 files', function( done ) {
 		webPackageReader.loadByFile( path.join( dataPath, 'test1.package.xml' ) )
@@ -23,6 +23,23 @@ describe( 'Load By File', function() {
 				expect( err ).not.toBeNull();
 				done();
 			} );
+	} );
+
+} );
+
+describe( 'Load By File (Synchronous)', function() {
+
+	it( 'Should load 2 files', function( ) {
+		var files = webPackageReader.loadByFileSync( path.join( dataPath, 'test1.package.xml' ) )
+		expect( files.length ).toBe( 2 );
+		expect( files[0] ).toBe( path.join( dataPath, 'file1.js' ) );
+		expect( files[1] ).toBe( path.join( dataPath, 'file2.js' ) );
+	} );
+
+	it( 'Should throw on invalid XML input', function() {
+		expect( function() {
+			webPackageReader.loadByFileSync( path.join( dataPath, 'invalidxml.package.xml' ) )
+		}).toThrow();
 	} );
 
 } );

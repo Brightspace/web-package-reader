@@ -2,5 +2,6 @@
 	<JavaScript>
 		<File Path="file3.js" />
 		<File Path="file4.js" />
+		<File/>
 	</JavaScript>
 </Package>
