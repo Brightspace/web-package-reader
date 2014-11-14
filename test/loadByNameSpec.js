@@ -5,7 +5,7 @@ var webPackageReader = require('../'),
 
 var dataPath = path.join( __dirname, 'data' );
 
-describe( 'Load By Name', function() {
+describe( 'Load By Name (Asynchronous)', function() {
 
 	var opts = { webPackagePath: path.join( dataPath, 'packages' ) };
 
@@ -28,6 +28,28 @@ describe( 'Load By Name', function() {
 				expect( err ).not.toBeNull();
 				done();
 			} );
+
+	} );
+
+} );
+
+describe( 'Load By Name (Synchronous)', function() {
+
+	var opts = { webPackagePath: path.join( dataPath, 'packages' ) };
+
+	it( 'should load 4 files across 2 package files', function() {
+		var files = webPackageReader.loadByNameSync( 'definition1', opts );
+		expect( files.length ).toBe( 4 );
+		expect( files[0] ).toBe( path.join( dataPath, 'file1.js' ) );
+		expect( files[1] ).toBe( path.join( dataPath, 'file2.js' ) );
+		expect( files[2] ).toBe( path.join( dataPath, 'file3.js' ) );
+		expect( files[3] ).toBe( path.join( dataPath, 'file4.js' ) );
+	} );
+
+	it( 'should throw if no web package path is defined', function() {
+		expect( function() {
+			webPackageReader.loadByNameSync( 'definition1' );
+		}).toThrow();
 
 	} );
 
