@@ -38,9 +38,9 @@ describe( 'Load By File (Synchronous)', function() {
 
 	it( 'Should load 2 files', function( ) {
 		var files = webPackageReader.loadByFileSync( path.join( dataPath, 'test1.package.xml' ) );
-		expect( files.CSS.length ).toBe( 2 );
-		expect( files.CSS[0] ).toBe( path.join( dataPath, 'file1.css' ) );
-		expect( files.CSS[1] ).toBe( path.join( dataPath, 'file2.css' ) );
+		expect( files.Css.length ).toBe( 2 );
+		expect( files.Css[0] ).toBe( path.join( dataPath, 'file1.css' ) );
+		expect( files.Css[1] ).toBe( path.join( dataPath, 'file2.css' ) );
 	} );
 
 	it( 'Should throw on invalid XML input', function() {
