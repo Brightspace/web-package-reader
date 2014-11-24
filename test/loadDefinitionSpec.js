@@ -44,14 +44,14 @@ describe( 'Load Definition (Asynchronous)', function() {
 describe( 'Load Definition (Synchronous)', function() {
 
 	it( 'Should resolve relative paths', function() {
-		var files = loadDefinitionSync( path.join( dataPath, 'packages', 'definition1.definition.xml' ) )
+		var files = loadDefinitionSync( path.join( dataPath, 'packages', 'definition1.definition.xml' ) );
 		expect( files.length ).toBe( 2 );
 		expect( files[0] ).toBe( path.join( dataPath, 'test1.package.xml' ) );
 		expect( files[1] ).toBe( path.join( dataPath, 'test2.package.xml' ) );
 	} );
 
 	it( 'Should leave absolute paths alone', function() {
-		var files = loadDefinitionSync( path.join( dataPath, 'packages', 'definition2.definition.xml' ) )
+		var files = loadDefinitionSync( path.join( dataPath, 'packages', 'definition2.definition.xml' ) );
 		expect( files.length ).toBe( 2 );
 		if( path.sep === '/' ) {
 			expect( files[1] ).toBe( '/abc/test1.package.xml' );

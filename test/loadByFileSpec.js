@@ -30,16 +30,33 @@ describe( 'Load By File (Asynchronous)', function() {
 describe( 'Load By File (Synchronous)', function() {
 
 	it( 'Should load 2 files', function( ) {
-		var files = webPackageReader.loadByFileSync( path.join( dataPath, 'test1.package.xml' ) )
-		expect( files.length ).toBe( 2 );
-		expect( files[0] ).toBe( path.join( dataPath, 'file1.js' ) );
-		expect( files[1] ).toBe( path.join( dataPath, 'file2.js' ) );
+		var files = webPackageReader.loadByFileSync( path.join( dataPath, 'test1.package.xml' ) );
+		expect( files.JavaScript.length ).toBe( 2 );
+		expect( files.JavaScript[0] ).toBe( path.join( dataPath, 'file1.js' ) );
+		expect( files.JavaScript[1] ).toBe( path.join( dataPath, 'file2.js' ) );
+	} );
+
+	it( 'Should load 2 files', function( ) {
+		var files = webPackageReader.loadByFileSync( path.join( dataPath, 'test1.package.xml' ) );
+		expect( files.Css.length ).toBe( 2 );
+		expect( files.Css[0] ).toBe( path.join( dataPath, 'file1.css' ) );
+		expect( files.Css[1] ).toBe( path.join( dataPath, 'file2.css' ) );
 	} );
 
 	it( 'Should throw on invalid XML input', function() {
 		expect( function() {
-			webPackageReader.loadByFileSync( path.join( dataPath, 'invalidxml.package.xml' ) )
+			webPackageReader.loadByFileSync( path.join( dataPath, 'invalidxml.package.xml' ) );
 		}).toThrow();
 	} );
+
+	it( 'Should not fail with missing Css list.', function() {
+		var files = webPackageReader.loadByFileSync( path.join( dataPath, 'test3.package.xml' ) );
+		expect( files.Css.length ).toBe( 0 );
+	});
+
+	it( 'Should not fail with missing JavaScript list.', function() {
+		var files = webPackageReader.loadByFileSync( path.join( dataPath, 'test4.package.xml' ) );
+		expect( files.JavaScript.length ).toBe( 0 );
+	});
 
 } );

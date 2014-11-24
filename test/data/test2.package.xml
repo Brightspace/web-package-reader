@@ -1,4 +1,9 @@
 <Package Name="TestPackage1" xmlns="http://schemas.desire2learn.com/xml/schemas/package.xsd">
+	<Css>
+		<File Path="file3.css" />
+		<File Path="file4.css" />
+		<File/>
+	</Css>
 	<JavaScript>
 		<File Path="file3.js" />
 		<File Path="file4.js" />
