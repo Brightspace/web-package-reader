@@ -49,4 +49,14 @@ describe( 'Load By File (Synchronous)', function() {
 		}).toThrow();
 	} );
 
+	it( 'Should not fail with missing Css list.', function() {
+		var files = webPackageReader.loadByFileSync( path.join( dataPath, 'test3.package.xml' ) );
+		expect( files.Css.length ).toBe( 0 );
+	});
+
+	it( 'Should not fail with missing JavaScript list.', function() {
+		var files = webPackageReader.loadByFileSync( path.join( dataPath, 'test4.package.xml' ) );
+		expect( files.JavaScript.length ).toBe( 0 );
+	});
+
 } );
