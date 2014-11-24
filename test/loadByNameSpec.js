@@ -39,11 +39,11 @@ describe( 'Load By Name (Synchronous)', function() {
 
 	it( 'should load 4 files across 2 package files', function() {
 		var files = webPackageReader.loadByNameSync( 'definition1', opts );
-		expect( files.length ).toBe( 4 );
-		expect( files[0] ).toBe( path.join( dataPath, 'file1.js' ) );
-		expect( files[1] ).toBe( path.join( dataPath, 'file2.js' ) );
-		expect( files[2] ).toBe( path.join( dataPath, 'file3.js' ) );
-		expect( files[3] ).toBe( path.join( dataPath, 'file4.js' ) );
+		expect( files.JavaScript.length ).toBe( 4 );
+		expect( files.JavaScript[0] ).toBe( path.join( dataPath, 'file1.js' ) );
+		expect( files.JavaScript[1] ).toBe( path.join( dataPath, 'file2.js' ) );
+		expect( files.JavaScript[2] ).toBe( path.join( dataPath, 'file3.js' ) );
+		expect( files.JavaScript[3] ).toBe( path.join( dataPath, 'file4.js' ) );
 	} );
 
 	it( 'should throw if no web package path is defined', function() {
