@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Package Name="TestPackage2" HasCss="false" HasJavaScript="true">
 	<Paths>
 		<File Path="c:\abc\test1.package.xml" />
