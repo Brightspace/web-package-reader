@@ -1,4 +1,4 @@
-<Package Name="TestPackage1" xmlns="http://schemas.desire2learn.com/xml/schemas/package.xsd">
+﻿<Package Name="TestPackage1" xmlns="http://schemas.desire2learn.com/xml/schemas/package.xsd">
 	<Css>
 		<File Path="file1.css" />
 		<File Path="file2.css" />
