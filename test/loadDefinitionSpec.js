@@ -60,4 +60,9 @@ describe( 'Load Definition (Synchronous)', function() {
 		}
 	} );
 
+	it( 'Parses a file with noise without failing.', function() {
+		var files = loadDefinitionSync( path.join( dataPath, 'packages', 'definition3.definition.xml' ) );
+		expect( files.length ).toBe( 0 );
+	} );
+
 } );

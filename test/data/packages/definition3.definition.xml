@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package Name="TestPackage3" HasCss="false" HasJavaScript="true">
+	<Paths>
+		<File/>
+		<What/>
+	</Paths>
+	<What/>
+</Package>
