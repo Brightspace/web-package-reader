@@ -3,7 +3,7 @@
 [![Build status][ci-image]][ci-url]
 [![Coverage Status][coverage-image]][coverage-url]
 
-Utilities for reading contents of D2L web package files.
+Utilities for reading contents of D2L web package files not for fun.
 
 ## Installation
 
