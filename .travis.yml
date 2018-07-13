@@ -1,13 +1,13 @@
 language: node_js
 node_js:
-- '0.10'
+  - '0.10'
 after_success:
-- gulp coverage
+  - gulp coverage
 deploy:
-  provider: npm
-  email: d2ltravisdeploy@d2l.com
-  api_key:
-    secure: LbBP/0oghsd5DwxGl2GKcLg8CqQ1y7HLcp/GGRrfiO0qLPCfqB484uSBVfPFc/rklslTPgXtRgTmD+lQlsu3kfe2AIfRWI/BEc6rRsk2GGGh0o5dPZseNPfN4bKS4MYup0onxXjdBcYsoJ0NypMwW0clrl1vPvX3Pz6EruFXcog=
+  provider: script
+  script: echo "npm credentials were revoked on 2018-07-12. We regenerated many
+    credentials, but this repository had no changes in at least 18 months and
+    was skipped. Reconfigure npm deployments. -omsmith"; exit 1
   on:
     tags: true
     repo: Brightspace/web-package-reader
